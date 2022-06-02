@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 <header class="page-header">
@@ -45,7 +45,7 @@
 </header>
 
 <main>
-  <section class="main-banner bg-container">
+  <section class="main-banner">
     <img src="images/welcome.svg" alt="Приветствуем на сайте Седона!" class="banner-inscription" height="352"
          width="458">
   </section>
@@ -108,10 +108,8 @@
       <a href="catalog.html">Поиск гостиницы в Седоне</a>
     </span>
   </section>
-</main>
-<footer class="page-footer">
-  <section class="newsletter-index-page bg-container">
-    <h2 class="newsletter-title-index">Подпишитесь на рассылку</h2>
+  <section class="newsletter-section newsletter-index">
+    <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
     <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="newsletter-email" class="visually-hidden">Ваш email.</label>
@@ -122,6 +120,8 @@
       </button>
     </form>
   </section>
+</main>
+<footer class="page-footer">
   <section class="footer-social">
     <h2 class="visually-hidden">Социальные сети.</h2>
     <ul class="footer-social-list">
