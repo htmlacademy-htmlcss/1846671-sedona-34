@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,25 +18,25 @@
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #333333;
+  margin: 0;
 }
 
 .page-header {
@@ -53,25 +53,28 @@ body {
   text-align: center;
 }
 
-.bg-container {
+.newsletter-index{
   color: #ffffff;
   background-color: #273947;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("../images/main_backgrounds/subscription-bg.jpg");
 }
 
 .main-banner {
-  background-image: url("/images/main_backgrounds/index-background.jpg");
+  background-image: url("../images/main_backgrounds/index-background.jpg");
   text-align: center;
-}
+  color: #ffffff;
+  background-color: #273947;
+  background-size: cover;
+  background-repeat: no-repeat;}
 
 .filters-container {
-  background-image: url("/images/main_backgrounds/filter-bg.jpg");
-}
-
-.newsletter-index-page {
-  background-image: url("/images/main_backgrounds/subscription-bg.jpg");
-  text-align: center;
+  background-image: url("../images/main_backgrounds/filter-bg.jpg");
+  color: #ffffff;
+  background-color: #273947;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner-inscription {
@@ -83,13 +86,13 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 32px;
   line-height: 35px;
   text-transform: uppercase;
 }
 
-.main-page-header, .interesting-header, .newsletter-title-index {
+.main-page-header, .interesting-header {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -98,8 +101,8 @@ body {
   color: #000000;
 }
 
-.newsletter-title {
-  color: #ffffff;
+.newsletter-section {
+  text-align: center;
 }
 
 .advantage-description {
@@ -132,6 +135,12 @@ body {
 
 .advantage-header, .subadvantage-header, .newsletter-title {
   text-transform: uppercase;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .advantage-header, .subadvantage-header {
@@ -258,13 +267,14 @@ body {
 .button {
   color: white;
   text-transform: uppercase;
-  border-right: 4px;
+  border-radius: 4px;
   background-color: #756157;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   border: none;
+  appearance: none;
 }
 
 .search-button a {
@@ -291,7 +301,7 @@ body {
   text-transform: capitalize;
 }
 
-.more-details-button a{
+.more-details-button a {
   text-decoration: none;
   color: white;
 }
@@ -305,10 +315,5 @@ body {
 }
 
 .search-container {
-  text-align: center;
-}
-
-.newsletter-catalog-page{
-  color: black;
   text-align: center;
 }
