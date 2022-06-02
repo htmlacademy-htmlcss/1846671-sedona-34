@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Гостиницы Седона</title>
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 <header class="page-header">
-  <a href="index.html"><img src="images/logo.svg" alt="Логотип компании по подбору отелей в Седоне." width="139" height="70" class="main-logo"></a>
+  <a href="index.html"><img src="images/logo.svg" alt="Логотип компании по подбору отелей в Седоне." width="139"
+                            height="70" class="main-logo"></a>
   <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
@@ -43,7 +45,7 @@
 </header>
 <main>
   <section class="filters-container">
-    <h1>Гостиницы Седоны</h1>
+    <h1 class="main-catalog-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="visually-hidden" href="index.html">Главная.</a>
@@ -110,7 +112,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button button-search" type="submit">Применить</button>
+      <button class="button button-catalog-search" type="submit">Применить</button>
       <button class="button button-cancel" type="reset">Сбросить</button>
     </form>
   </section>
@@ -123,74 +125,86 @@
     </select>
     <ul class="views-container">
       <li class="view-type">
-        <a class="button button-display" href="#">
+        <a class="button-display" href="#">
           <span class="visually-hidden">Показать карточки.</span>
         </a>
       </li>
       <li class="view-type">
-        <a class="button button-display" href="#">
+        <a class="button-display" href="#">
           <span class="visually-hidden">Показать галерею.</span>
         </a>
       </li>
       <li class="view-type">
-        <a href="#" class="button button-display">
+        <a href="#" class="button-display">
           <span class="visually-hidden">Показать список.</span>
         </a>
       </li>
     </ul>
     <ul class="gallery-container">
       <li class="gallery-item">
-        <img class="item-image" src="images/hotels/hotel-1.jpg" alt="Вид на скалы и звездное небо из гостиницы Amara Resort & Spa." width="300" height="211">
+        <img class="item-image" src="images/hotels/hotel-1.jpg"
+             alt="Вид на скалы и звездное небо из гостиницы Amara Resort & Spa." width="300" height="211">
         <h3 class="item-header">Amara Resort & Spa</h3>
         <div class="item-info">
           <p class="item-type">Гостиница</p>
           <span class="item-price">От 4000 ₽</span>
         </div>
-        <a href="" class="button more-details-button">Подробнее</a>
+        <span class="button more-details-button">
+        <a href="">Подробнее</a>
+        </span>
         <button type="button" class="button favorite-button">В избранное</button>
         <span class="item-stars">4 звезды</span>
         <span class="item-raiting">рейтинг: 8.5</span>
       </li>
       <li class="gallery-item">
-        <img class="item-image" src="images/hotels/hotel-2.jpg" alt="Вид на скалы в хмурую погоду с радугой из гостиницы Villas at Poco Diablo." width="300" height="211">
+        <img class="item-image" src="images/hotels/hotel-2.jpg"
+             alt="Вид на скалы в хмурую погоду с радугой из гостиницы Villas at Poco Diablo." width="300" height="211">
         <h3 class="item-header">Villas at Poco Diablo</h3>
         <div class="item-info">
           <p class="item-type">Гостиница</p>
           <span class="item-price">От 5000 ₽</span>
         </div>
-        <a href="" class="button more-details-button">Подробнее</a>
-        <button type="button" class="button favorite-button">В избранное</button>
+        <span class="button more-details-button">
+        <a href="">Подробнее</a>
+        </span>
+        <button type="button" class="button favorite-button-selected">В избранном</button>
         <span class="item-stars">4 звезды</span>
         <span class="item-raiting">рейтинг: 9.2</span>
       </li>
       <li class="gallery-item">
-        <img class="item-image" src="images/hotels/hotel-3.jpg" alt="Вид на оранжеввые скалы в ясный день из гостиницы Desert Quail Inn." width="300" height="211">
+        <img class="item-image" src="images/hotels/hotel-3.jpg"
+             alt="Вид на оранжеввые скалы в ясный день из гостиницы Desert Quail Inn." width="300" height="211">
         <h3 class="item-header">Desert Quail Inn</h3>
         <div class="item-info">
           <p class="item-type">Гостиница</p>
           <span class="item-price">От 2500 ₽</span>
         </div>
-        <a href="" class="button more-details-button">Подробнее</a>
+        <span class="button more-details-button">
+        <a href="">Подробнее</a>
+        </span>
         <button type="button" class="button favorite-button">В избранное</button>
         <span class="item-stars">3 звезды</span>
         <span class="item-raiting">рейтинг: 6.9</span>
       </li>
       <li class="gallery-item">
-        <img class="item-image" src="images/hotels/hotel-4.jpg" alt="Вид на горы и звездное небо из гостиницы GreenTree Inn." width="300" height="211">
+        <img class="item-image" src="images/hotels/hotel-4.jpg"
+             alt="Вид на горы и звездное небо из гостиницы GreenTree Inn." width="300" height="211">
         <h3 class="item-header">GreenTree Inn</h3>
         <div class="item-info">
           <p class="item-type">Гостиница</p>
           <span class="item-price">От 1500 ₽</span>
         </div>
-        <a href="" class="button more-details-button">Подробнее</a>
+        <span class="button more-details-button">
+        <a href="">Подробнее</a>
+        </span>
         <button type="button" class="button favorite-button">В избранное</button>
         <span class="item-stars">2 звезды</span>
         <span class="item-raiting">рейтинг: 5.0</span>
       </li>
     </ul>
     <ol class="pagination">
-      <li class="pagination-item">
-        <a class="pagination-link pagination-current">1</a>
+      <li class="pagination-item pagination-current-link">
+        <a class="pagination-link">1</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">2</a>
@@ -209,41 +223,42 @@
       </li>
     </ol>
     <label class="view-text">Гостиниц на странице:
-      <select>
+      <select class="catalog-view-select">
         <option value="4" selected>4</option>
         <option value="9">9</option>
         <option value="18">18</option>
       </select>
     </label>
   </section>
-</main>
-<footer class="page-footer">
-  <section class="newsletter">
+  <section class="newsletter-section">
     <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
     <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="newsletter-email" class="visually-hidden">Ваш email.</label>
-      <input class="newsletter-field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+      <input class="newsletter-field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
+             required>
       <button class="button newsletter-button" type="submit">
         Подписаться
       </button>
     </form>
   </section>
+</main>
+<footer class="page-footer">
   <section class="footer-social">
     <h2 class="visually-hidden">Социальные сети.</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://vk.com/htmlacademy">
+        <a class="social-button" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВКонтакте.</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://t.me/htmlacademy ">
+        <a class="social-button" href="https://t.me/htmlacademy ">
           <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+        <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
