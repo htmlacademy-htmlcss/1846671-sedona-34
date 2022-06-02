@@ -31,7 +31,7 @@
 
 
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
@@ -45,7 +45,7 @@ body {
 }
 
 .navigation-link {
-  color: black;
+  color: #000000;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -53,24 +53,25 @@ body {
   text-align: center;
 }
 
-.newsletter-index{
+.newsletter-index {
   color: #ffffff;
   background-color: #273947;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/main_backgrounds/subscription-bg.jpg");
+  background-image: url("../images/main-backgrounds/subscription-bg.jpg");
 }
 
 .main-banner {
-  background-image: url("../images/main_backgrounds/index-background.jpg");
+  background-image: url("../images/main-backgrounds/index-background.jpg");
   text-align: center;
   color: #ffffff;
   background-color: #273947;
   background-size: cover;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+}
 
 .filters-container {
-  background-image: url("../images/main_backgrounds/filter-bg.jpg");
+  background-image: url("../images/main-backgrounds/filter-bg.jpg");
   color: #ffffff;
   background-color: #273947;
   background-size: cover;
@@ -150,14 +151,14 @@ body {
 }
 
 .footer-contacts {
-  color: black;
+  color: #000000;
   text-align: center;
   font-size: 40px;
   line-height: 40px;
 }
 
 .footer-contacts a {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -192,7 +193,7 @@ body {
 }
 
 .search-result {
-  color: black;
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -202,7 +203,7 @@ body {
 .select-control {
   font-size: 18px;
   line-height: 21px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .item-header {
@@ -222,7 +223,7 @@ body {
 }
 
 .pagination {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -236,7 +237,7 @@ body {
 }
 
 .pagination-item a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -246,7 +247,7 @@ body {
 }
 
 .pagination-current-link a {
-  color: black;
+  color: #000000;
 }
 
 .view-text {
@@ -257,15 +258,17 @@ body {
 .catalog-view-select {
   font-size: 18px;
   line-height: 21px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .newsletter-field {
   font-size: 18px;
   line-height: 21px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .button {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   border-radius: 4px;
   background-color: #756157;
@@ -275,11 +278,12 @@ body {
   text-align: center;
   border: none;
   appearance: none;
+  font-family: "PT Sans", sans-serif;
 }
 
 .search-button a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   line-height: 36px;
 }
@@ -303,7 +307,7 @@ body {
 
 .more-details-button a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 .favorite-button {
@@ -316,4 +320,8 @@ body {
 
 .search-container {
   text-align: center;
+}
+
+.min-price, .max-price {
+  font-family: "PT Sans", sans-serif;
 }
