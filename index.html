@@ -9,36 +9,38 @@
 <div class="page-container">
   <header class="page-header">
     <nav class="navigation">
-      <a href="index.html"><img src="images/logo.svg" alt="Логотип компании по подбору отелей в Седоне." width="139"
-                                height="70" class="main-logo"></a>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link active-link" href="index.html">О нас</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
+      <div class="navigation-block">
+        <a class="logo-link" href="index.html" aria-current="page"><img src="images/logo.svg"
+                                                    alt="Логотип компании по подбору отелей в Седоне." width="139"
+                                                    height="70" class="main-logo"></a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link active-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a class="navigation-link" href="#">
           <span class="visually-hidden">
                 Поиск.
           </span>
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a class="navigation-link" href="#">
           <span class="visually-hidden">
                 Избранное.
           </span>
-            <span class="favorite-count">12</span>
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="">
           <button type="button" class="button page-header-button">Хочу сюда!</button>
         </li>
       </ul>
@@ -56,21 +58,22 @@
       <h2 class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
       <ol class="advantages-list">
         <li class="advantages-item">
-          <div class="dark-blue-bg true-city-container">
+          <div class="dark-blue-bg advantage-item-img">
             <div class="true-city-item">
               <h3 class="advantage-header">Настоящий городок</h3>
               <span class="advantage-number">№1</span>
-              <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
             </div>
             <img src="images/advantages-images/photo-1.jpg" height="384" width="800"
                  alt="Вид отеля из цветов на фоне горы." class="advantages-photo">
           </div>
-          <ul class="advantages-sublist light-blue">
+          <ul class="advantages-sublist">
             <li class="advantages-sublist-item">
               <h3 class="subadvantage-header">Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-sublist-item food">
+            <li class="advantages-sublist-item">
               <h3 class="subadvantage-header">Еда</h3>
               <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -80,7 +83,7 @@
             </li>
           </ul>
         </li>
-        <li class="advantages-item dark-blue-bg diablo-bridge-container">
+        <li class="advantages-item dark-blue-bg advantage-item-img">
           <img src="images/advantages-images/photo-2.jpg" height="384" width="800" alt="Вид на мост Дьявола."
                class="advantages-photo">
           <div class="diablo-bridge-item">
@@ -114,17 +117,19 @@
         гостиниц
         в Седоне</p>
       <span class="button search-button">
-      <a href="catalog.html">Поиск гостиницы в Седоне</a>
+      <a class="search-button-link" href="catalog.html">Поиск гостиницы в Седоне</a>
     </span>
     </section>
     <section class="newsletter-section newsletter-index">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email" class="visually-hidden">Ваш email.</label>
-        <input class="newsletter-field" placeholder="Ваш email" type="email" name="newsletter-email"
-               id="newsletter-email"
-               required>
+        <div class="email-field">
+          <label for="newsletter-email" class="visually-hidden">Ваш email.</label>
+          <input class="newsletter-field" placeholder="Ваш email" type="email" name="newsletter-email"
+                 id="newsletter-email"
+                 required>
+        </div>
         <button class="button newsletter-button" type="submit">
           Подписаться
         </button>
