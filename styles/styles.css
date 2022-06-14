@@ -294,6 +294,10 @@ body {
   margin: 31px 0 90px 0;
 }
 
+.item-image{
+  object-fit: cover;
+}
+
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
