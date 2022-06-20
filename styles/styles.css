@@ -93,6 +93,72 @@ body {
   position: relative;
 }
 
+.active-link{
+  position: relative;
+}
+
+.active-link::after{
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background-color: #756257;
+  position: absolute;
+  bottom: 0;
+  left: 17px;
+  right: 17px;
+  width: auto;
+}
+
+.advantage-number{
+  position: relative;
+  padding: 0 15px;
+}
+
+.advantage-number::before{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  right: 0;
+  top: 50%;
+  background-color: #ffffff;
+}
+
+.advantage-number::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  left: 0;
+  top: 50%;
+  background-color: #ffffff;
+}
+
+.advantage-number-other{
+  position: relative;
+  padding: 0 15px;
+}
+
+.advantage-number-other::before{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  right: 0;
+  top: 50%;
+  background-color: #000000;
+}
+
+.advantage-number-other::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  left: 0;
+  top: 50%;
+  background-color: #000000;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -441,17 +507,51 @@ body {
 }
 
 .breadcrumbs-item {
-  margin: 10px 10px 0 10px;
-}
-
-.breadcrumbs-item:first-child {
-  margin-left: 0;
+  margin: 10px 25px 0 0;
+  display: inline-block;
 }
 
 .breadcrumbs-item:last-child {
   margin-right: 0;
 }
 
+.breadcrumbs-link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:active{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus{
+  color: #ffffff;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 25px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.breadcrumbs-main-page-icon,
+.breadcrumbs-main-page-icon:focus{
+  fill: #ffffff;
+}
+
+.breadcrumbs-main-page-icon:hover,
+.breadcrumbs-main-page-icon:active{
+  fill: rgba(255, 255, 255, 0.6);
+}
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -956,7 +1056,17 @@ body {
 .newsletter-button:disabled,
 .button-catalog-search:disabled,
 .favorite-button:disabled,
-.favorite-button-selected:disabled{
+.favorite-button-selected:disabled,
+.button-cancel:disabled{
   color: #FFFFFF;
   background-color: #E5E5E5;
+}
+
+.button-cancel:hover,
+.button-cancel:focus{
+  color: #68A2CA;
+}
+
+.button-cancel:active{
+  color: rgba(130, 179, 211, 0.5);
 }
