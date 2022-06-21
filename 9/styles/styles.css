@@ -224,7 +224,7 @@ body {
 .advantages-sublist-item {
   width: 400px;
   box-sizing: border-box;
-  padding: 80px 85px;
+  padding: 81px 85px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -282,7 +282,7 @@ body {
   padding-right: 20px;
 }
 
-.navigation-user-item-favorite:after {
+.favorite-count {
   border-radius: 50%;
   position: absolute;
   width: 20px;
@@ -290,10 +290,9 @@ body {
   left: 24px;
   top: 15px;
   background: #7DB54F;
-  content: "12";
   color: #ffffff;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 20px;
   text-align: center;
   font-family: "PT Sans", sans-serif;
 }
@@ -311,11 +310,11 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #273947;
-  /*background-size: bottom, cover;*/
+  background-size: auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
   padding: 50px 0 80px 0;
   box-sizing: border-box;
 }
@@ -349,23 +348,39 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-housing {
+.advantages-housing:before {
+  content: "";
+  display: inline-block;
   background-image: url("../images/advantages-images/housing.svg");
   background-repeat: no-repeat;
-  background-size: 76px 72px;
-  background-position: center 80px;
+  width: 76px;
+  height: 72px;
 }
 
 .advantages-eating {
-  background-image: url("../images/advantages-images/food.svg");
-  background-repeat: no-repeat;
   background-size: 75px 70px;
   background-position: center 80px;
 }
 
-.advantages-souvenir {
+.advantages-eating:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/advantages-images/food.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 70px;
+}
+
+.advantages-souvenir:before {
+  content: "";
+  display: inline-block;
   background-image: url("../images/advantages-images/souvenir.svg");
   background-repeat: no-repeat;
+  width: 72px;
+  height: 76px;
+}
+
+.advantages-souvenir {
   background-size: 75px 70px;
   background-position: center 80px;
 }
@@ -379,7 +394,6 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-top: 63px;
 }
 
 .interesting-header {
@@ -467,7 +481,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  margin: 102px 0 30px 0;
+  margin: 20px 0 30px 0;
   text-transform: uppercase;
 }
 
