@@ -222,6 +222,61 @@
       </a>
     </section>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <div class="date-input-fields">
+              <label class="field-group-title" for="search-start-date">Дата заезда:</label>
+              <input class="search-input search-date" type="text" id="search-start-date" name="search-start-date"
+                     placeholder="11 ноября 2011" value="27 апреля 2020">
+            </div>
+            <span class="validation-error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="field-group">
+            <div class="date-input-fields">
+              <label class="field-group-title" for="search-end-date">Дата выезда:</label>
+              <input class="search-input search-date" type="text" id="search-end-date" name="search-end-date"
+                     placeholder="11 ноября 2011" value="1 сентября 2021">
+            </div>
+            <span class="validation-success">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="human-field-group">
+            <div class="human-field-item">
+              <label class="field-group-title" for="adult-count">Взрослые:</label>
+              <div class="search-input human-count">
+                <button type="button" class="human-count-button button-minus"></button>
+                <input class="count-input" type="number" id="adult-count" name="adult-count" value="2">
+                <button type="button" class="human-count-button button-plus"></button>
+              </div>
+            </div>
+            <div class="human-field-item">
+              <label class="field-group-title" for="children-count">
+                Дети:
+              </label>
+              <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">i</button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              <div class="search-input human-count">
+                <button type="button" class="human-count-button button-minus"></button>
+                <input class="count-input" type="number" id="children-count" name="children-count" value="1">
+                <button type="button" class="human-count-button button-plus"></button>
+              </div>
+            </div>
+          </div>
+          <button class="button search-form-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </div>
 </body>
 </html>
