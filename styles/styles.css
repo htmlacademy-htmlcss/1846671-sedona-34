@@ -625,8 +625,7 @@ body {
 }
 
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 5px;
   left: 4px;
@@ -635,6 +634,51 @@ body {
   content: "";
   background-image: url("../images/check.svg");
   background-repeat: no-repeat;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border: 3px solid #83B3D3;
+  border-radius: 8px;
+  top: -2px;
+  left: -2px;
+  position: absolute;
+}
+
+.control-input[type="radio"]:focus + .control-mark::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: 3px solid #83B3D3;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  position: absolute;
+}
+
+.control-input[type="radio"]:focus + .control-mark::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border: 3px solid #83B3D3;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  position: absolute;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1308,8 +1352,6 @@ body {
 .price-span {
   opacity: 0.3;
   padding: 12px 14px 15px 14px;
-  position: relative;
-  left: 97px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1394,11 +1436,23 @@ body {
   background-color: #f2f2f2;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-button::before {
+  content: "";
+  width: 20px;
+  height: 21px;
+  position: absolute;
   background-image: url("../images/cross.svg");
   background-size: 21px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
+  opacity: 1;
+
 }
 
 .modal-close-button:hover {
@@ -1411,9 +1465,12 @@ body {
   border: 3px solid #83B3D3;
 }
 
+.modal-close-button:active::before {
+  opacity: 0.3;
+}
+
 .modal-close-button:active {
   background-color: #e6e6e6;
-  opacity: 0.3;
   border: none;
 }
 
@@ -1698,7 +1755,7 @@ body {
   opacity: 0.3;
 }
 
-.range-input-container:focus-within::before{
+.range-input-container:focus-within::before {
   content: "";
   position: absolute;
   width: 141px;
