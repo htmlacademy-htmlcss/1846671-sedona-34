@@ -200,7 +200,7 @@
     </section>
     <section class="footer-developer">
       <h2 class="visually-hidden">Информация о разработчике.</h2>
-      <a href="https://htmlacademy.ru/">
+      <a class="academy-link" href="https://htmlacademy.ru/">
         <svg class="footer-logo-icon" aria-hidden="true" focusable="false" width="115" height="33" fill="none"
              role="img" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6
@@ -230,26 +230,22 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="field-group">
             <div class="date-input-fields">
               <label class="field-group-title" for="search-start-date">Дата заезда:</label>
-              <input class="search-input search-date" type="text" id="search-start-date" name="search-start-date"
+              <input class="search-date" type="text" id="search-start-date" name="search-start-date"
                      placeholder="11 ноября 2011" value="27 апреля 2020">
             </div>
             <span class="validation-error">Мы не можем отправить вас в прошлое.</span>
-          </div>
-          <div class="field-group">
             <div class="date-input-fields">
               <label class="field-group-title" for="search-end-date">Дата выезда:</label>
-              <input class="search-input search-date" type="text" id="search-end-date" name="search-end-date"
+              <input class="search-date" type="text" id="search-end-date" name="search-end-date"
                      placeholder="11 ноября 2011" value="1 сентября 2021">
             </div>
             <span class="validation-success">На эти даты есть свободные номера. Пока есть.</span>
-          </div>
           <div class="human-field-group">
             <div class="human-field-item">
               <label class="field-group-title" for="adult-count">Взрослые:</label>
-              <div class="search-input human-count">
+              <div class="search-input-count human-count">
                 <button type="button" class="human-count-button button-minus"></button>
                 <input class="count-input" type="number" id="adult-count" name="adult-count" value="2">
                 <button type="button" class="human-count-button button-plus"></button>
@@ -265,7 +261,7 @@
                       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>
-              <div class="search-input human-count">
+              <div class="search-input-count human-count">
                 <button type="button" class="human-count-button button-minus"></button>
                 <input class="count-input" type="number" id="children-count" name="children-count" value="1">
                 <button type="button" class="human-count-button button-plus"></button>
