@@ -348,7 +348,7 @@ body {
   background-color: #273947;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 60px 60px;
 }
 
 .banner-inscription {
@@ -531,7 +531,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin: 0;
+  margin: 0 0 0 10px;
 }
 
 .breadcrumbs {
@@ -545,16 +545,12 @@ body {
 }
 
 .breadcrumbs-item {
-  margin: 0 15px 0 0;
+  margin: 0 5px 0 0;
   display: inline-block;
 }
 
 .breadcrumbs-item:last-child {
   margin-right: 0;
-}
-
-.breadcrumbs-link:first-child {
-  padding-left: 0;
 }
 
 .breadcrumbs-link {
@@ -580,6 +576,11 @@ body {
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.breadcrumbs-main-page-icon{
+  position: relative;
+  top: 1px;
 }
 
 .breadcrumbs-main-page-icon,
@@ -869,6 +870,7 @@ body {
   appearance: none;
   font-family: "PT Sans", sans-serif;
   cursor: pointer;
+  outline: none;
 }
 
 .search-button-link {
@@ -1024,6 +1026,7 @@ body {
   display: flex;
   margin-top: 40px;
   flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 .catalog-filter-list {
@@ -1072,7 +1075,7 @@ body {
 }
 
 .view-type {
-  border: 2px solid #E5E5E5;
+  border: 2px solid transparent;
   box-sizing: border-box;
   min-width: 48px;
   height: 48px;
@@ -1087,10 +1090,6 @@ body {
 
 .view-type:not(:last-child) {
   margin-right: 8px;
-}
-
-.view-type-selected {
-  border-color: #000000;
 }
 
 .gallery-footer-container {
@@ -1300,6 +1299,8 @@ body {
 .button-display {
   padding: 12px 15px;
   border-radius: 4px;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .range {
@@ -1326,7 +1327,7 @@ body {
 }
 
 .range-input {
-  width: 141.5px;
+  width: 142px;
   font: inherit;
   background-color: transparent;
   border: none;
@@ -1755,7 +1756,7 @@ body {
   opacity: 0.3;
 }
 
-.range-input-container:focus-within::before {
+.catalog-filter-label:nth-child(odd) .range-input-container:focus-within::before {
   content: "";
   position: absolute;
   width: 141px;
@@ -1764,4 +1765,19 @@ body {
   box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label:nth-child(even) .range-input-container:focus-within::before {
+  content: "";
+  position: absolute;
+  width: 141px;
+  height: 49px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
+  border: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
+}
+
+.button-display-selected {
+  border-color: #000000;
 }
