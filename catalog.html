@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.ico">
   <title>Гостиницы Седона</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -10,10 +12,12 @@
   <header class="page-header">
     <nav class="navigation">
       <div class="navigation-block">
-        <a class="logo-link" href="index.html" aria-current="page"><img src="images/logo.svg"
-                                                                        alt="Логотип компании по подбору отелей в Седоне."
-                                                                        width="139"
-                                                                        height="70" class="main-logo"></a>
+        <a class="logo-link" href="index.html" aria-current="page">
+          <img src="images/logo.svg"
+               alt="Логотип компании по подбору отелей в Седоне."
+               width="139"
+               height="70" class="main-logo">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -91,7 +95,7 @@
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden  control-input" type="checkbox" name="parking" checked>
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Парковка</span>
               </label>
@@ -135,19 +139,20 @@
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <div class="range">
             <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label">
+              <div class="range-item">
+                <label for="min-price" class="visually-hidden">Указать минимальную цену.</label>
                 <div class="range-input-container">
-                  <input class="range-input" type="number" value="0" name="min-price">
+                  <input class="range-input" type="number" value="0" name="min-price" id="min-price">
                 </div>
                 <span class="price-span">от</span>
-              </label>
-              <label class="catalog-filter-label">
+              </div>
+              <div class="range-item">
+                <label for="max-price" class="visually-hidden">Указать максимальную цену.</label>
                 <div class="range-input-container">
-                  <input class="range-input" type="number" value="9000" name="max-price">
+                  <input class="range-input" type="number" value="9000" name="max-price" id="max-price">
                 </div>
-                <span
-                  class="price-span">до</span>
-              </label>
+                <span class="price-span">до</span>
+              </div>
             </div>
             <div class="range-scale">
               <div class="range-bar">
@@ -184,7 +189,6 @@
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
                 </svg>
                 <span class="visually-hidden">Показать карточки.</span>
-              </a>
               </a>
             </li>
             <li class="view-type">
@@ -230,8 +234,10 @@
           <span class="item-price">От 5000 ₽</span>
           <a class="button more-details-button" href="#">Подробнее</a>
           <button type="button" class="button favorite-button-selected">В избранном</button>
-          <span class="item-stars stars-4"></span>
-          <span class="item-raiting">рейтинг: 9.2</span>
+          <div class="raiting-container">
+            <span class="item-stars stars-4"></span>
+            <span class="item-raiting">рейтинг: 9.2</span>
+          </div>
         </li>
         <li class="gallery-item">
           <img class="item-image" src="images/hotels/hotel-4.jpg"
@@ -258,7 +264,7 @@
       </ul>
       <div class="gallery-footer-container">
         <ol class="pagination">
-          <li class="pagination-item pagination-current-item">
+          <li class="pagination-item">
             <a class="pagination-link pagination-current-link">1</a>
           </li>
           <li class="pagination-item">
@@ -292,8 +298,7 @@
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Ваш e-mail.</label>
         <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-               id="newsletter-email"
-               required>
+               id="newsletter-email" required>
         <button class="button newsletter-button" type="submit">
           Подписаться
         </button>
@@ -305,7 +310,7 @@
       <h2 class="visually-hidden">Социальные сети.</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="social-button" href="https://vk.com/htmlacademy">
+          <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">
             <svg class="social-icon social-icon-vk" aria-hidden="true" width="25" height="14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -318,7 +323,7 @@
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="social-button" href="https://t.me/htmlacademy ">
+          <a class="social-button" href="https://t.me/htmlacademy" target="_blank">
             <svg class="social-icon social-icon-tg" aria-hidden="true" width="19" height="16" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -329,7 +334,7 @@
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <svg class="social-icon social-icon-ut" aria-hidden="true" focusable="false" width="23" height="18"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -349,7 +354,7 @@
     </section>
     <section class="footer-developer">
       <h2 class="visually-hidden">Информация о разработчике.</h2>
-      <a class="academy-link" href="https://htmlacademy.ru/">
+      <a class="academy-link" href="https://htmlacademy.ru/" target="_blank">
         <svg class="footer-logo-icon" aria-hidden="true" focusable="false" width="115" height="33" fill="none"
              role="img" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6
