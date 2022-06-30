@@ -134,7 +134,7 @@ body {
   height: 2px;
   background-color: #756257;
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 14px;
   right: 14px;
   width: auto;
@@ -1743,19 +1743,6 @@ body {
   margin-top: 11px;
 }
 
-.search-input-count {
-  padding: 0;
-  background-color: #f2f2f2;
-  border-radius: 4px;
-  border: none;
-  box-sizing: border-box;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  height: 50px;
-  align-self: center;
-}
-
 .search-date {
   width: 420px;
   border: 3px solid transparent;
@@ -1809,11 +1796,6 @@ body {
   display: inline-block;
 }
 
-.human-count {
-  width: 133px;
-  display: flex;
-}
-
 .count-input::-webkit-outer-spin-button,
 .count-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1826,8 +1808,8 @@ body {
   appearance: none;
   color: #000000;
   text-align: center;
-  width: 53px;
   box-sizing: border-box;
+  width: 100%;
   border: 3px solid transparent;
   padding: 0;
   cursor: pointer;
@@ -1853,16 +1835,38 @@ body {
   color: #ffffff;
 }
 
+
+
+.search-input-count {
+  padding: 0;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  height: 50px;
+  align-self: center;
+}
+
+.human-count {
+  width: 133px;
+  display: flex;
+  padding: 0 5px;
+}
+
 .human-count-button {
   border: 3px solid transparent;
   line-height: 13px;
   font-size: 13px;
   cursor: pointer;
-  padding: 19px 17px;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   height: 100%;
+  width: 70px;
 }
 
 .human-count-button:hover {
@@ -1874,16 +1878,23 @@ body {
   color: #ffffff;
 }
 
-.human-count-button:focus {
+.human-count-button:focus::before {
+  content: "";
+  width: 25px;
+  height: 25px;
   border: 3px solid #83B3D3;
   border-radius: 4px;
   opacity: 1;
   box-sizing: border-box;
+}
+
+.human-count-button:focus {
   outline: none;
+  opacity: 1;
 }
 
 .human-count-button:active {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .button-minus {
@@ -1892,7 +1903,6 @@ body {
   background-size: 13px 13px;
   background-position: 50%;
   opacity: 0.3;
-  transform: translateX(7px) translateY(-1px);
 }
 
 .button-plus {
@@ -1901,7 +1911,7 @@ body {
   background-size: 13px 13px;
   background-position: 50%;
   opacity: 0.3;
-  transform: translateX(-8px) translateY(-1px);
+  transform: translateX(-4px);
 }
 
 .human-field-group {
@@ -1968,7 +1978,7 @@ body {
 
 /*Раскомментировать display: none; для просмотра модального окна*/
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
 
 .tooltip-toggle {
@@ -2025,6 +2035,10 @@ body {
 
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.tooltip-toggle:focus {
+  outline: none;
 }
 
 .tooltip {
